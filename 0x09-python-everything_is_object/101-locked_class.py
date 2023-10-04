@@ -1,10 +1,15 @@
 #!/usr/bin/python3
 """
-that prevents the user from dynamically 
-creating new instance attributes
+Defines a locked class that prevents 
+the user from dynamically creating new instance attributes
 
 """
 
 
 class LockedClass:
-    __slots__ = ['first_name']
+   
+"""
+Create new instance attributes except 'first_name'.
+"""
+
+    __slots__ = ["first_name"]
