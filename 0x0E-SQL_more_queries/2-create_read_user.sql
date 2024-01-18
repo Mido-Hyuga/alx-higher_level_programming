@@ -1,8 +1,4 @@
--- Create the user if it doesn't exist
-CREATE USER IF NOT EXISTS user_0d_1@localhost IDENTIFIED BY 'user_0d_1_pwd';
-
--- Grant all privileges to the user
-GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';
-
--- Flush to apply the changes
-FLUSH PRIVILEGES;
+-- a script that creates the database hbtn_0d_2 and the user user_0d_2.
+CREATE DATABASE IF NOT EXISTS hbtn_0d_2;
+CREATE USER IF NOT EXISTS 'user_0d_2'@'localhost' IDENTIFIED BY 'user_0d_2_pwd';
+GRANT SELECT ON hbtn_0d_2.* TO 'user_0d_2'@'localhost';
