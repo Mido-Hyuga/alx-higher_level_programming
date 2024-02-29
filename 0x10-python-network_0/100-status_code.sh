@@ -1,3 +1,3 @@
 #!/bin/bash
-# Outputs the status code of an HTTP response
-curl $1 -sI -w '%{http_code}' -o /dev/null
+# Send a request to a URL passed as an argument, and display only the status code of the response.
+curl -so /dev/null -w "%{http_code}" "$1"
